@@ -1,6 +1,7 @@
-package com.lectera.rpc.data;
+package com.ums.rpc.data;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.time.ZonedDateTime;
 import java.util.Map;
 import java.util.Set;
@@ -22,7 +23,7 @@ public class UserDto implements Serializable {
 	private AbstractAddressDto address;
 	private String language;
 	private String country;
-	private ZonedDateTime birthday;
+	private LocalDate birthday;
 	private ZonedDateTime createdAt;
 	private Map<String, String> productReferralLinks;
 	private String croppedAvatarUri;
@@ -37,7 +38,7 @@ public class UserDto implements Serializable {
 	
 	public UserDto(Long id, String email, String nickName, String gender, String firstName, String lastName, Boolean verified, Boolean enabled,
 				   String userUUID, String ancestor, Set<GroupDto> groups, Set<ProductRoleDto> productsRoles, AbstractAddressDto address,
-				   String language, String country, ZonedDateTime birthday, ZonedDateTime createdAt, Map<String, String> productReferralLinks,
+				   String language, String country, LocalDate birthday, ZonedDateTime createdAt, Map<String, String> productReferralLinks,
 				   String croppedAvatarUri, String originalAvatarUri, Set<UserContactDto> userContacts, Set<UserContactLinkDto> userContactLinks,
 				   String bio, String educationLevel, String jobTitle) {
 		this.id = id;
@@ -181,11 +182,11 @@ public class UserDto implements Serializable {
 		this.country = country;
 	}
 	
-	public ZonedDateTime getBirthday() {
+	public LocalDate getBirthday() {
 		return birthday;
 	}
 	
-	public void setBirthday(ZonedDateTime birthday) {
+	public void setBirthday(LocalDate birthday) {
 		this.birthday = birthday;
 	}
 	

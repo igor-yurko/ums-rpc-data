@@ -1,8 +1,8 @@
-package com.lectera.rpc.api;
+package com.ums.rpc.api;
 
-import com.lectera.rpc.data.CreditedAccrualDto;
-import com.lectera.rpc.data.TokensDto;
-import com.lectera.rpc.data.UserDto;
+import com.ums.rpc.data.CreditedAccrualDto;
+import com.ums.rpc.data.TokensDto;
+import com.ums.rpc.data.UserDto;
 
 public interface UmsRPCConnectionService {
 	Boolean addAccrualAmountToWallet(CreditedAccrualDto accrual);

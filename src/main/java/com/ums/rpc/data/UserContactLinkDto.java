@@ -1,4 +1,4 @@
-package com.lectera.rpc.data;
+package com.ums.rpc.data;
 
 import java.io.Serializable;
 

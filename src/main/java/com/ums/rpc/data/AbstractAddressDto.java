@@ -1,4 +1,4 @@
-package com.lectera.rpc.data;
+package com.ums.rpc.data;
 
 import java.io.Serializable;
 
@@ -15,7 +15,7 @@ public abstract class AbstractAddressDto implements Serializable {
 	public AbstractAddressDto() {
 	}
 	
-	public AbstractAddressDto(Long id,CountryDto country, String state, String city, String zipCode, String addressLine1,
+	public AbstractAddressDto(Long id, CountryDto country, String state, String city, String zipCode, String addressLine1,
 							  String addressLine2, AddressType type) {
 		this.id = id;
 		this.country = country;
