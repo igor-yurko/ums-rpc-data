@@ -12,11 +12,12 @@ public class CreditedAccrualDto implements Serializable {
 	private Long orderItemId;
 	private String name;
 	private String description;
+	private String productApiKey;
 	
 	public CreditedAccrualDto() {}
 	
 	public CreditedAccrualDto(String userUUID, String accrualId, BigDecimal accrualAmount, String accrualCurrency, Long orderItemId, String name,
-							  String description) {
+							  String description, String productApiKey) {
 		this.userUUID = userUUID;
 		this.accrualId = accrualId;
 		this.accrualAmount = accrualAmount;
@@ -24,6 +25,7 @@ public class CreditedAccrualDto implements Serializable {
 		this.orderItemId = orderItemId;
 		this.name = name;
 		this.description = description;
+		this.productApiKey = productApiKey;
 	}
 	
 	public static long getSerialVersionUID() {
@@ -84,5 +86,13 @@ public class CreditedAccrualDto implements Serializable {
 	
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	
+	public String getProductApiKey() {
+		return productApiKey;
+	}
+	
+	public void setProductApiKey(String productApiKey) {
+		this.productApiKey = productApiKey;
 	}
 }
