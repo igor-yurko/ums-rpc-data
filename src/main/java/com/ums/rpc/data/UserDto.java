@@ -149,7 +149,6 @@ public class UserDto implements Serializable {
 	}
 	
 	
-	
 	public Set<ProductRoleDto> getProductsRoles() {
 		return productsRoles;
 	}

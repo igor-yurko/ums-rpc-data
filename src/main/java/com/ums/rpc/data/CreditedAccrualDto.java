@@ -28,10 +28,6 @@ public class CreditedAccrualDto implements Serializable {
 		this.productApiKey = productApiKey;
 	}
 	
-	public static long getSerialVersionUID() {
-		return serialVersionUID;
-	}
-	
 	public String getUserUUID() {
 		return userUUID;
 	}
