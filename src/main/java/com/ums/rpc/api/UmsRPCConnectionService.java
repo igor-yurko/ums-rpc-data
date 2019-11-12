@@ -13,6 +13,6 @@ public interface UmsRPCConnectionService {
 	Boolean isOrderPaid(String orderUuid);
 	TokensDto setBaseUserRole(String productApiKey, String userUuid, String role);
 	UserDto getUserProfileData(String userUuid);
-	UserDto getUserProfilesData(Collection<String> userUuids);
+	Collection<UserDto> getUserProfilesData(Collection<String> userUuids);
 	BigDecimal getSystemIncomePerPeriod(ZonedDateTime startTime, ZonedDateTime endTime);
 }
