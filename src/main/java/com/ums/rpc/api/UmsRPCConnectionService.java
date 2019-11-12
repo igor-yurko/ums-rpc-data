@@ -6,11 +6,13 @@ import com.ums.rpc.data.UserDto;
 
 import java.math.BigDecimal;
 import java.time.ZonedDateTime;
+import java.util.Collection;
 
 public interface UmsRPCConnectionService {
 	Boolean addAccrualAmountToWallet(CreditedAccrualDto accrual);
 	Boolean isOrderPaid(String orderUuid);
 	TokensDto setBaseUserRole(String productApiKey, String userUuid, String role);
 	UserDto getUserProfileData(String userUuid);
+	UserDto getUserProfilesData(Collection<String> userUuids);
 	BigDecimal getSystemIncomePerPeriod(ZonedDateTime startTime, ZonedDateTime endTime);
 }
